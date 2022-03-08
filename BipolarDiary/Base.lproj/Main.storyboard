@@ -159,6 +159,9 @@
                                 <buttonConfiguration key="configuration" style="plain" image="eye.slash" catalog="system">
                                     <color key="baseForegroundColor" name="lightGray"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="togglePasswordVisibility:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Und-aP-Mh0"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -242,6 +245,9 @@
                                     </attributedString>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="sendEmail:" destination="RJW-gs-ATW" eventType="touchUpInside" id="wrl-3d-eUm"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Diário do Bipolar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TI1-CA-pOA">
                                 <rect key="frame" x="20" y="388" width="374" height="32"/>
@@ -303,6 +309,9 @@
                             <constraint firstItem="THA-3i-h3h" firstAttribute="top" secondItem="qMM-mB-Y0Q" secondAttribute="bottom" constant="46" id="uQi-hp-UDa"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="bb3-bn-1bg" id="Ywe-as-ope"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G1K-y8-URR" sceneMemberID="firstResponder"/>
             </objects>
@@ -359,6 +368,9 @@
                                     </attributedString>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="createAccount:" destination="ciw-fQ-lGg" eventType="touchUpInside" id="IaF-RJ-Ifw"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Diário do Bipolar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TgH-TS-c1i">
                                 <rect key="frame" x="20" y="388" width="374" height="32"/>
@@ -399,6 +411,9 @@
                                 <buttonConfiguration key="configuration" style="plain" image="eye.slash" catalog="system">
                                     <color key="baseForegroundColor" name="lightGray"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="togglePasswordVisibility:" destination="ciw-fQ-lGg" eventType="touchUpInside" id="tEW-kk-sVj"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CONFIRMAR SENHA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rh0-aP-eGK">
                                 <rect key="frame" x="25" y="635" width="369" height="25"/>
@@ -422,7 +437,7 @@
                                     <constraint firstAttribute="height" constant="1" id="tU9-Fq-QOZ"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uqS-3U-Le8">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uqS-3U-Le8">
                                 <rect key="frame" x="324" y="660" width="70" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="70" id="BHf-0L-sLx"/>
@@ -432,6 +447,9 @@
                                 <buttonConfiguration key="configuration" style="plain" image="eye.slash" catalog="system">
                                     <color key="baseForegroundColor" name="lightGray"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="togglePasswordVisibility:" destination="ciw-fQ-lGg" eventType="touchUpInside" id="VHw-LL-3fB"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="np0-E2-txY"/>
@@ -480,6 +498,13 @@
                             <constraint firstAttribute="trailingMargin" secondItem="g1w-Fc-cYL" secondAttribute="trailing" constant="80" id="xx9-Af-WpJ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="confirmPasswordEyeIconButton" destination="uqS-3U-Le8" id="ecZ-up-Cxt"/>
+                        <outlet property="confirmPasswordTextField" destination="mnv-u6-mZR" id="ub5-jy-OcK"/>
+                        <outlet property="emailTextField" destination="UXb-ZD-7MG" id="2v8-1t-fG1"/>
+                        <outlet property="passwordEyeIconButton" destination="Cca-Ts-JQ5" id="rcW-Md-91t"/>
+                        <outlet property="passwordTextField" destination="8GK-uP-Ebd" id="Nz7-t1-Q6C"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cNt-14-yqz" sceneMemberID="firstResponder"/>
             </objects>
